@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+    <style>
+        #utama {
+            background: lavenderblush;
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+        }
+        #header{
+            background: white;
+            font-size: x-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        #menu{
+            background: lightgrey;
+            border: 3px solid white;
+        }
+        #form1{
+            background: lightgrey;
+            border: 3px solid white;
+            margin: 5px;
+            padding: 10px;
+            float: left;
+        }
+        #form2{
+            background: lightgrey;
+            border: 3px solid white;
+            margin: 5px;
+            padding: 10px;
+            float: left;
+        }
+        #form3{
+            background: lightgrey;
+            border: 3px solid white;
+            margin: 5px;
+            padding: 10px;
+            float: left;
+        }
+        #simpan{
+            position: absolute ;
+            bottom: -180px;
+            left: 30;
+        }
+    </style>
+</head>
+    
+<body>
+    <div id="utama">
+        <div id="header">
+            <p>FORM PENDATAAN MAHASISWA</p>
+        </div>
+        <div id="menu">
+            <button style="background: rgba(3, 3, 53, 0.904);color: white;size: 3px;margin-left: 5px;">Daftar</button>
+            <button style="background: rgba(3, 3, 53, 0.904);color: white;size: 3px;margin: 2px;">Form</button>
+        </div>
+        <div id="form1">
+            <p style="font-weight: bold">Fakultas Ilmu Komputer</p>
+            <form>
+                <label for="jurusan">Jurusan</label><br>
+                <input type="text" id="jurusan" name="jurusan" style="width: 6cm;"><br>
+                <label for="prodi">Program Studi</label><br>
+                <input type="text" id="prodi" name="prodi" style="width: 6cm;"><br>
+                <label for="kdmhs">Kode Mahasiswa*</label><br>
+                <input type="text" id="kdmhs" name="kdmhs" style="width: 6cm;"><br>
+                <label for="nmmhs">Nama Mahasiswa*</label><br>
+                <input type="text" id="nmmhs" name="nmmhs" style="width: 6cm;"><br>
+                <label for="nik">NIK Mahasiswa (No KTP)*</label><br>
+                <input type="nik" id="jurusan" name="nik" style="width: 6cm;"><br>
+                <label for="bpjs">No BPJS</label><br>
+                <input type="text" id="bpjs" name="bpjs" style="width: 6cm;"><br>
+                <label for="pass">Password</label><br>
+                <input type="text" id="pass" name="pass" style="width: 6cm;"><br>
+                <label for="thnagkt">Tahun Angkatan*</label><br>
+                <input type="text" id="thnagkt" name="thnagkt" style="width: 6cm;"><br>
+                <label for="sms">Semester Masuk*</label><br>
+                <select id="sms" name="sms" style="width: 6.3cm;"><br>
+                    <option value="sms1">Semester 1</option>
+                    <option value="sms2">Semester 2</option>
+                    <option value="sms3">Semester 3</option>
+                    <option value="sms4">Semester 4</option>
+                </select><br>    
+                <label for="dospem">Dosen Pembimbing Akademik</label><br>
+                <input type="text" id="dospem" name="dospem" style="width: 6cm;"><br>
+                <label for="telportu">No Telp Orang Tua/Wali</label><br>
+                <input type="text" id="telportu" name="telportu" style="width: 6cm;"><br>
+                <label for="nohp">No HP Mahasiswa</label><br>
+                <input type="text" id="nohp" name="nohp" style="width: 6cm;"><br>
+                <label for="email">Email Aktif Mahasiswa</label><br>
+                <input type="text" id="email" name="email" style="width: 6cm;"><br>
+                <label for="t4tgl">Tempat Tinggal Saat Kuliah</label><br>
+                <select id="t4tgl" name="t4tgl" style="width: 6.3cm;"><br>
+                    <option value="kos">Kos</option>
+                    <option value="rumah">Rumah</option>
+                    <option value="sodara">Bersama Saudara</option>
+                    <option value="apart">Apartemen</option>
+                </select><br>
+                <label for="jk">Jenis Kelamin</label><br>
+                <select id="jk" name="jk" style="width: 6.3cm;"><br>
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                </select><br>        
+            </form>
+        </div>
+        <div id="form2">
+            <form>
+                <label for="agama">Agama</label><br>
+                <select id="agama" name="agama" style="width: 6.3cm;"><br>
+                    <option value="kristen">Kristen</option>
+                    <option value="islam">Islam</option>
+                    <option value="katholik">Katholik</option>
+                    <option value="budha">Budha</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="konghucu">Konghucu</option>
+                </select><br>
+                <label for="marital">Status Marital</label><br>
+                <select id="marital" name="marital" style="width: 6.3cm;"><br>
+                    <option value="blmnikah">Belum Menikah</option>
+                    <option value="menikah">Menikah</option>
+                </select><br>
+                <label for="nmibu">Nama Gadis Ibu Kandung</label><br>
+                <input type="text" id="nmibu" name="nmibu" style="width: 6cm;"><br>
+                <label for="nmayah">Nama Ayah Kandung</label><br>
+                <input type="text" id="nmayah" name="nmayah" style="width: 6cm;"><br>
+                <label for="t4lhr">Tempat Lahir</label><br>
+                <input type="text" id="t4lhr" name="t4lhr" style="width: 6cm;"><br>
+                <label for="tgllhr">Tanggal Lahir</label><br>
+                <input type="text" id="tgllhr" name="tgllhr" style="width: 6cm;"><br>
+                <label for="tgllhr">Kewarganegaraan</label><br>
+                <select id="tgllhr" name="tgllhr" style="width: 6.3cm;"><br>
+                    <option value="wni">WNI</option>
+                    <option value="wna">WNA</option>
+                </select><br>
+                <label for="almtasal">Alamat Asal</label><br>
+                <input type="text" id="almtasal" name="almtasal" style="width: 6cm;"><br>
+                <label for="rtasal">RT/RW Asal</label><br>
+                <input type="text" id="rtasal" name="rtasal" style="width: 6cm;"><br>
+                <label for="desa">Desa/Kelurahan Asal</label><br>
+                <input type="text" id="desa" name="desa" style="width: 6cm;"><br>
+                <label for="kecasal">Kecamatan Asal</label><br>
+                <input type="text" id="kecasal" name="kecasal" style="width: 6cm;"><br>
+                <label for="kota">Kota Asal</label><br>
+                <input type="text" id="kota" name="kota" style="width: 6cm;"><br>
+                <label for="kdpos">Kode Pos Asal</label><br>
+                <input type="text" id="kdpos" name="kdpos" style="width: 6cm;"><br>
+                <label for="prov">Provinsi Asal</label><br>
+                <input type="text" id="prov" name="prov" style="width: 6cm;"><br>
+                <label for="negara">Negara Asal</label><br>
+                <input type="text" id="negara" name="negara" style="width: 6cm;"><br>
+            </form>
+        </div>
+        <div id="form3">
+            <form>
+                <label for="almtskrg">Alamat Sekarang</label><br>
+                <input type="text" id="almtskrg" name="almtskrg" style="width: 6cm;"><br>
+                <label for="rtskrg">RT/RW Sekarang</label><br>
+                <input type="text" id="rtskrg" name="rtskrg" style="width: 6cm;"><br>
+                <label for="desaskrg">Desa/Kelurahan Sekarang</label><br>
+                <input type="text" id="desaskrg" name="desaskrg" style="width: 6cm;"><br>
+                <label for="kecskrg">Kecamatan Sekarang</label><br>
+                <input type="text" id="kecskrg" name="kecskrg" style="width: 6cm;"><br>
+                <label for="kotaskrg">Kota Sekarang</label><br>
+                <input type="text" id="kotaskrg" name="kotaskrg" style="width: 6cm;"><br>
+                <label for="kdposskrg">Kode Pos Sekarang</label><br>
+                <input type="text" id="kdposskrg" name="kdposskrg" style="width: 6cm;"><br>
+                <label for="provskrg">Provinsi Sekarang</label><br>
+                <input type="text" id="provskrg" name="provskrg" style="width: 6cm;"><br>
+                <label for="transfer">Transfer</label><br>
+                <select id="transfer" name="transfer" style="width: 6.3cm;"><br>
+                    <option value="tidak">Tidak</option>
+                    <option value="ya">Ya</option>
+                </select><br>
+                <label for="jnsdaftar">Jenis Pendaftaran</label><br>
+                <select id="jnsdaftar" name="jnsdaftar" style="width: 6.3cm;"><br>
+                    <option value="reguler">Reguler</option>
+                    <option value="prestasi">Prestasi</option>
+                </select><br>
+                <label for="fstatus">Status</label><br>
+                <select id="fstatus" name="fstatus" style="width: 6.3cm;"><br>
+                    <option value="faktif">Aktif</option>
+                    <option value="ftdkaktif">Tidak Aktif</option>
+                </select><br>
+            </form>
+        </div>
+        <div id="simpan">
+            <input type = "submit" name = "fsubmit" value = "Simpan" style="padding: 6px;width: 3cm;">
+            <input type = "submit" name = "fbatal" value = "Batal" style="padding: 6px;width: 3cm;">
+        </div>
+    </div>
+</body>
+</html>
